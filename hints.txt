@@ -1,0 +1,55 @@
+Part 1 hint
+Use defer in the script tag!
+
+
+
+
+
+Part 2 hint
+Make sure you have unique ids for the HTML elements
+
+
+
+
+
+Part 3 hint
+Remember order of operations when using the equation. 
+
+
+
+
+
+
+Part 3 hint
+Check to see if your equation looks like this:
+(5 / 9) * (Fahren - 32)
+
+
+
+
+
+Part 4 hint
+To display messages to the user, I suggest creating 2 variables, 1 for
+the celcius conversion and another for the temperature message.
+
+
+
+
+
+Part 4 hint
+You will need several if statements
+
+
+
+
+
+
+Part 4 hint
+You will need else if and else
+
+
+
+
+
+
+Don't forget to actually display the messages using getElementById()
