@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
     <script src="./script/script.js" defer></script>
     <title>Document</title>
 
@@ -12,9 +13,15 @@
 
 <body>
     <div class="temp-convert">
-        <h1>Temperature Conversion is fun</h1>
-        <h2 id="temp"></h3>
-        <h3 id="temperature"></h2>
+        <div class="submit">
+            <h1>Temperature Conversion is Cool... Get It?</h1>
+            <h3>Click the button below to convert a temperature from farenheit to celcius!</h3>
+            <button onclick="tempConvert()">Click Here</button>
+        </div>
+        <div class="solution" id="tempColor">
+            <h2 id="temp"></h3>
+            <h3 id="temperature"></h2>
+        </div>
     </div>
 </body>
 </html>

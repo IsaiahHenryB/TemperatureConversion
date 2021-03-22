@@ -29,19 +29,23 @@ whole process by checking the browser and the console.
 
 For hints, check out the hints.txt file.
 */
-
-let temp = prompt("Yo, name any temperature in farenheit, bruh? (Please enter numbers ex. 0-9)")
+function tempConvert(){
+let temp = prompt("Yo, name any temperature in farenheit, bruh? (Please enter numbers)")
 
 if(temp === ""){
     alert(`Please at least type something, Bruh!`)
 }else if (temp < 40) {
     alert(`Whoa, bruh! ${temp}° is too cold bruh!`)
+    document.getElementById("tempColor").style.backgroundColor="#3ecfcf"
 } else if (temp <= 100) {
     alert(`Okay bruh! ${temp}° that's a good temp for me!`)
+    document.getElementById("tempColor").style.backgroundColor="#1dd14d"
 } else if (temp > 100) {
     alert(`Whoa! ${temp}° is way too hot bruh!`)
+    document.getElementById("tempColor").style.backgroundColor="#ff4d1c"
 }  else{
     alert(`${temp}!? That ain't even a temperature, bruh! Please type an ACTUAL number next time BRUH!`)
+    document.getElementById("tempColor").style.backgroundColor="#f20000"
 }
 
 if (temp <= 0, temp >= 0){
@@ -54,8 +58,10 @@ console.log(typeof temp)
 let cel = (5 / 9) * (temp - 32);
 if (isNaN(temp)){
     document.getElementById("temperature").innerHTML = `Really Bruh!? ${temp} ain't even a number... SMH`
+    document.getElementById("temp").innerHTML = `Seriously!!?`
 } else {
     // Made it so that it only displays two decimal places of the number in celcius.
     document.getElementById("temperature").innerHTML = `${cel.toFixed(2)}° is that temperature in celcius by the way. Bruh!`;
     document.getElementById("temp").innerHTML = `So ${temp}° is what you chose?`
+}
 }
